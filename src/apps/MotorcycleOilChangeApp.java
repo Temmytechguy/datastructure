@@ -20,7 +20,7 @@ public class MotorcycleOilChangeApp {
 		//drain the oil by removing the drain plug and refill
 		drainAndReplaceOil();
 		
-		//replace the skid plate in change oil
+		//replace the skid plate in inseert change oil
 		replaceSkidPlate();
 		
 		emptyToolset();

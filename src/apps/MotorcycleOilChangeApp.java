@@ -3,7 +3,7 @@ package apps;
 import ds.BasicHashTable;
 
 public class MotorcycleOilChangeApp {
-	//we will use a 12 piece socket set for this job
+	//we will use a 12 of  piece socket set for this job
 	private BasicHashTable<String, String> toolset = new BasicHashTable<>(12);
 	
 	public static void main(String [] args) {
@@ -14,7 +14,7 @@ public class MotorcycleOilChangeApp {
 	public void changeOil() {
 		buildToolset();
 		
-		//remove skid plate to get at the oil pan
+		//remove skid plate to get at the the oil pan
 		removeSkidPlate();
 		
 		//drain the oil by removing the drain plug and refill

@@ -23,6 +23,8 @@ public class MotorcycleOilChangeApp {
 		//replace the skid plate in inseert change oil
 		replaceSkidPlate();
 		
+		//empty toolset
+		
 		emptyToolset();
 	}
 	

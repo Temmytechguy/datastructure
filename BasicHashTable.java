@@ -86,6 +86,41 @@ public class BasicHashTable<X,Y> {
 		return value;
 		
 	}
+	
+	public boolean hasKey(X key)
+	{
+		int hash = calculateHash(key);
+		
+		//if we dont have anything for the given key, we can just return false
+		if(data[hash] == null)
+		{
+			return false;
+		}
+		else {
+			if(data[hash].getKey().equals(key)) {
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
+	public boolean hasValue(Y value)
+	{
+		//loop through all of the hash entries
+		for(int i = 0; i < this.capacity; i++)
+		{
+			HashEntry entry = data[i];
+			
+			//if this hash entry isnt null and the value equals the one passed in, the hashtable has this vaule
+			if(entry != null && entry.getValue().equals(value))
+			{
+				return true;
+			}
+		}
+		
+		return false;
+	}
 	private int calculateHash(X key)
 	{
 		int hash = (key.hashCode() % this.capacity);
